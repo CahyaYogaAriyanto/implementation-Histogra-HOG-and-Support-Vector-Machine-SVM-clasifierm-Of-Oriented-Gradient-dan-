@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/login.css">
+  <title>Upload Image</title>
+</head>
+<body>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+  <div class="latar">
+    <div class="shap"></div>
+    <div class="shap"></div>
+  </div>
+  <form action="/predict" method="post" enctype="multipart/form-data">
+    <h3>Upload Image</h3>
+    <label for="image">Upload Image</label>
+    <input type="file" id="image" name="image" accept="image/*">
+    <button type="submit">Predict</button>
+  </form>
+</body>
+</html>
+
